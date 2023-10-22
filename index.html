@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <style>
+      body {
+        /* Thiết lập hình nền cho toàn trang */
+        background-image: url("bg.webp");
+        /* Thiết lập vị trí của hình nền ở giữa */
+        background-position: center;
+        /* Thiết lập kích thước của hình nền để bao phủ toàn trang */
+        background-size: cover;
+      } 
+      /* Tạo kiểu cho phần tử div */
+      .item {
+        /* Thiết lập màu nền cho phần tử div */
+        /* Thiết lập độ trong suốt cho phần tử div */
+        opacity: 0.8;
+        /* Thiết lập đường viền cho phần tử div */
+        /* Thiết lập khoảng cách trong cho phần tử div */
+        padding: 5px;
+        /* Thiết lập kích thước cho phần tử div */
+        width: 300px;
+        height: 300px;
+        /* Thiết lập vị trí của phần tử div ở góc phải trên */
+        position: absolute;
+        right: 0%;
+        top: 0%;
+      }
+      .button {
+        /* Thiết lập màu nền, màu chữ, đường viền và độ cong */
+        background-color: #f8bbba;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        /* Thiết lập kích thước, căn giữa và khoảng cách */
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        margin: 20px auto;
+        /* Thiết lập chuyển động cho hiệu ứng phóng to */
+        transition: transform 0.3s;
+      }
+
+      /* Tạo kiểu cho nút khi di chuyển chuột qua */
+      .button:hover {
+        /* Phóng to nút lên 10% */
+        transform: scale(1.1);
+      }
+
+      /* Tạo kiểu cho nút khi nhấp vào */
+      .button:active {
+        /* Nhấn nút xuống 5% */
+        transform: scale(0.95);
+      }
+      audio {
+        display: block;
+        margin: 10px;
+      }
+
+      #waveform {
+        background-color: #fff;
+        position: absolute;
+        top: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">
+      <button class="button" onclick="start_record()">Start record</button>
+      <button class="button" onclick="stop_record()">End record</button>
+      <button class="button" onclick="save_record()">Save record</button>
+    </div>
+    <div class="play">
+      <audio controls id="audio">
+      </audio>
+    </div>
+
+    <div id="waveform" style="width: 800px; height: 200px;">
+      <!-- the waveform will be rendered here -->
+    </div>
+
+    <script src="./index.js"> </script>
+    
+  </body>
+</html>
