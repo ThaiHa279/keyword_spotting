@@ -1,0 +1,79 @@
+% Required packages: amsfonts amsmath vntex enumitem multirow cellspace wrapfig xcolor ragged2e changepage fancyhdr titlesec caption listings hyperref biblatex biblatex-apa
+\usepackage[margin=2.5cm,left=4cm]{geometry}
+\usepackage[utf8]{vietnam} % Text Encoder
+\usepackage{amsfonts,amsmath,amsthm,amssymb} % Maths
+\usepackage{enumitem,multicol,multirow,longtable,cellspace} % Layout \booktabs,
+\usepackage{indentfirst}
+\usepackage{tikz,graphicx,wrapfig,xcolor} % Graphing
+\usepackage{ragged2e,changepage} % Page setup | fancyhdr
+\usepackage{titlesec,caption} % Title setting
+\usepackage{microtype}
+\usepackage[hidelinks,unicode,pdfusetitle]{hyperref}
+\usepackage[backend=biber,style=numeric,uniquelist=false]{biblatex} % References Engine
+\usepackage{dashrule} % để vẽ các đường kẻ chấm
+% Text Spacing
+\renewcommand{\baselinestretch}{1.3}
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{4pt}
+
+% Cell spacing (cellspace)
+\setlength{\cellspacetoplimit}{4pt}
+\setlength{\cellspacebottomlimit}{4pt}
+
+% Caption setup (caption)
+\captionsetup{
+	format=plain,
+	justification=centering,
+	labelsep=period,
+	labelfont=bf,
+	font=small,
+}
+
+% Highlight hyperlink of table of contents
+% \hypersetup{linktoc=all}
+
+% Set image-path (graphicx)
+\graphicspath{ {images/} }
+
+% Config tikz (tikz)
+\usetikzlibrary{calc}
+
+% Define new material colours (xcolor)
+\definecolor{mRed}{HTML}{f44336}
+\definecolor{mPink}{HTML}{e91e63}
+\definecolor{mPurple}{HTML}{9c27b0}
+\definecolor{mDeepPurple}{HTML}{673ab7}
+\definecolor{mIndigo}{HTML}{3f51b5}
+\definecolor{mBlue}{HTML}{2196f3}
+\definecolor{mBlueDarken4}{HTML}{0d47a1}
+\definecolor{mCyan}{HTML}{00bcd4}
+\definecolor{mTeal}{HTML}{009688}
+\definecolor{mGreen}{HTML}{4caf50}
+\definecolor{mLime}{HTML}{cddc39}
+\definecolor{mYellow}{HTML}{ffeb3b}
+\definecolor{mAmber}{HTML}{ffc107}
+\definecolor{mOrange}{HTML}{ff9800}
+\definecolor{mDeepOrange}{HTML}{ff5722}
+\definecolor{mBrown}{HTML}{795548}
+\definecolor{mBlueGrey}{HTML}{607d8b}
+\definecolor{mBlueGreyLighten5}{HTML}{eceff1}
+
+% Equations Prefers
+\everymath{\displaystyle}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Định nghĩa}[chapter]
+\newtheorem{example}{Ví dụ}[chapter]
+\newtheorem{theorem}{Định lý}[chapter]
+\newtheorem{consequence}{Hệ quả}[chapter]
+\newtheorem{exercise}{Bài tập}[chapter]
+
+\newenvironment{mBlock}[1]{\noindent\textbf{#1:} }{}
+
+% Document information
+\title{Niên luận ngành Khoa học máy tính: Ứng dụng nhận dạng từ khóa trong câu}
+\author{Vũ Thái Hà}
+\date{\the\year{}}
+
+% Add References resource (biblatex)
+\addbibresource{references.bib}

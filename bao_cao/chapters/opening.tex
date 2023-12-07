@@ -1,0 +1,76 @@
+\chapter*{Mở đầu}
+\addcontentsline{toc}{chapter}{Mở đầu}
+
+\section{Đặt vấn đề}
+Bài toán nhận dạng từ khóa (Keyword Spotting - KWS) trong lĩnh vực học sâu (Deep Learning) đóng vai trò quan trọng trong việc tạo ra các hệ thống tương tác giọng nói hiệu quả. KWS là công nghệ cho phép máy tính nhận biết và phản hồi các lệnh bằng giọng nói cụ thể từ người dùng. Tuy nhiên, việc phát triển một hệ thống KWS hiệu quả đặt ra nhiều thách thức.
+
+Thứ nhất, hệ thống cần phải chính xác và nhạy bén, có khả năng nhận biết từ khóa trong một loạt các điều kiện âm thanh khác nhau, bao gồm tiếng ồn nền và giọng đọc khác nhau. Thứ hai, hệ thống cần phải hoạt động nhanh chóng để cung cấp phản hồi tức thì cho người dùng. Cuối cùng, hệ thống cần phải tiết kiệm năng lượng, đặc biệt là khi được triển khai trên các thiết bị di động hoặc thiết bị IoT có nguồn năng lượng hạn chế.
+
+Vì vậy, việc nghiên cứu và phát triển các giải pháp KWS dựa trên học sâu là một lĩnh vực đầy thách thức và hứa hẹn. Các phương pháp mới cần phải giải quyết các vấn đề về độ chính xác, tốc độ và hiệu quả năng lượng để đáp ứng nhu cầu ngày càng tăng của các ứng dụng thực tế...
+
+Trên cơ sở đó, Niên luận này đề xuất nghiên cứu ứng dụng deep learning để phát hiện từ khóa trong câu. Niên luận sẽ tập trung vào các nội dung sau:
+
+\begin{itemize}
+    \item Nghiên cứu các phương pháp phát hiện từ khóa dựa trên deep learning
+    \item Xây dựng mô hình phát hiện từ khóa dựa trên deep learning
+    \item Đánh giá hiệu quả của mô hình
+    \item Triển khai mô hình trên ứng dụng
+\end{itemize}
+
+Niên luận này hy vọng sẽ góp phần phát triển các phương pháp phát hiện từ khóa dựa trên deep learning, từ đó nâng cao hiệu quả trong lĩnh vực xử lý dữ liệu âm thanh.
+
+\section{Lịch sử giải quyết vấn đề}
+
+Với sự phát triển của deep learning, các phương pháp phát hiện từ khóa dựa trên deep learning đã được nghiên cứu và phát triển mạnh mẽ. Các phương pháp này sử dụng các mạng nơ-ron nhân tạo để học hỏi từ dữ liệu văn bản.
+
+Một số các nghiên cứu về cách thức nhận dạng từ khóa trong câu nói ở nước ngoài như: 
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\section{Mục tiêu nghiên cứu}
+
+Mục tiêu của Niên luận này là nghiên cứu ứng dụng deep learning để phát hiện từ khóa trong câu. Niên luận sẽ tập trung vào các nội dung sau:
+\begin{itemize}
+
+    \item Nghiên cứu các phương pháp phát hiện từ khóa dựa trên deep learning: Niên luận sẽ phân tích ưu nhược điểm của từng phương pháp, và lựa chọn phương pháp phù hợp để xây dựng mô hình phát hiện từ khóa trong câu.
+
+    \item Xây dựng mô hình phát hiện từ khóa dựa trên deep learning: Mô hình sẽ được huấn luyện trên tập dữ liệu gồm các file âm thanh và danh sách từ khóa tương ứng. Niên luận sẽ đánh giá hiệu quả của mô hình trên 
+
+    \item Đánh giá hiệu quả của mô hình: Niên luận sẽ đánh giá hiệu quả của mô hình phát hiện từ khóa dựa trên tập dữ liệu thử nghiệm theo tiêu chí độ chính xác: Tỷ lệ các từ khóa được phát hiện chính xác.
+\end{itemize}
+
+Niên luận hy vọng sẽ góp phần phát triển các phương pháp phát hiện từ khóa dựa trên deep learning, từ đó nâng cao hiệu quả xử lý dữ liệu văn bản trong nhiều lĩnh vực.
+
+Ngoài ra, Niên luận cũng sẽ đề xuất một số hướng nghiên cứu tiếp theo để nâng cao hiệu quả của các phương pháp phát hiện từ khóa dựa trên deep learning.
+\section{Đối tượng và phạm vi nghiên cứu}
+\begin{enumerate}[label=\textbf{\thesection.\arabic*},align=left,left=0cm..1cm]
+	\item \textbf{Đối tượng nghiên cứu:} Các từ khóa bằng tiếng anh. Niên luận sẽ sử dụng bộ dữ liệu gồm nhiều file âm thanh và các từ khóa tương ứng để huấn luyện và đánh giá mô hình.\par
+	\item \textbf{Phạm vi nghiên cứu:}
+	\begin{enumerate}[label=$-$,align=left,left=0cm..0cm,itemindent=*]
+            \item Nghiên cứu các phương pháp phát hiện từ khóa dựa trên deep learning, bao gồm các phương pháp dựa trên học máy có giám sát, học máy không giám sát và học máy tăng cường.
+            \item Xây dựng mô hình phát hiện từ khóa dựa trên deep learning sử dụng phương pháp học máy có giám sát.
+            \item Đánh giá hiệu quả của mô hình phát hiện từ khóa dựa trên deep learning theo các tiêu chí độ chính xác, độ hoàn thành và độ tin cậy.
+            \item Xây dựng ứng dụng từ mô hình đã huấn luyện.
+	\end{enumerate}
+\end{enumerate}\par
+
+\section{Phương pháp nghiên cứu}
+Phương pháp nghiên cứu của niên luận này bao gồm các phương pháp sau:
+
+\begin{enumerate}[label=$-$,align=left,left=1cm..0cm,itemindent=*]
+        \item Nghiên cứu tài liệu: niên luận sẽ nghiên cứu các tài liệu liên quan đến phát hiện từ khóa, deep learning, và xử lý ngôn ngữ tự nhiên.
+        \item Thu thập dữ liệu: niên luận sẽ thu thập bộ dữ liệu gồm các câu văn tiếng Việt và danh sách từ khóa tương ứng.
+        \item Xây dựng mô hình: niên luận sẽ xây dựng mô hình phát hiện từ khóa dựa trên deep learning sử dụng phương pháp học máy có giám sát.
+        \item Huấn luyện mô hình: Mô hình sẽ được huấn luyện trên tập dữ liệu thu thập được.
+Đánh giá mô hình: Mô hình sẽ được đánh giá hiệu quả trên tập dữ liệu thử nghiệm.
+\end{enumerate}
+
+\section{Cấu trúc Niên luận}
+Niên luận ngoài \textit{Phần Mở đầu}, \textit{Phần Kết thúc}, gồm <?> chương:\par
+\textbf{Chương 1: <Tên chương>.}\par
+<Tóm tắt chương 1>\par
+\textbf{Chương 2: <Tên chương>.}\par
+<Tóm tắt chương 2>\par
+\textbf{Chương 3: <Tên chương>.}\par
+<Tóm tắt chương 3>\par
