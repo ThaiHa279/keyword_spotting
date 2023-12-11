@@ -84,14 +84,14 @@ function predict(arr) {
     var text = "";
     output_list.map((output) => {
         let max = Math.max.apply(null, output);
-        // if (max > 0.9) {
+        if (max > 0.8) {
             let temp = label[output.indexOf(max)];
             // if ((text.length == 0) || (temp != text.slice(text.length-temp.length, text.length))) {
             text = text + " " + temp;
             // }
             console.log(max);
 
-        // }
+        }
     })
     if (text == "") text = "Record error, try again!"
     const container = document.querySelector('#recordings')
